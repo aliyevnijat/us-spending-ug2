@@ -10,8 +10,7 @@ public class FrameWorkTest extends TestBaseClass {
 	@Test
 	public void frameWorkTest() {
 		
-		//Ekaterina's comment,Maria great job
-		
+		//Thank you Nijat, i've imported <Bobur2277></Bobur2277>
 	}
 	
 	
