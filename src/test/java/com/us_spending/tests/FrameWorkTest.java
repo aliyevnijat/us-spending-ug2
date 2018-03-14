@@ -10,5 +10,9 @@ public class FrameWorkTest extends TestBaseClass {
 	@Test
 	public void frameWorkTest() {
 		
+		//Ekaterina's comment
+		
 	}
+	
+	
 }
