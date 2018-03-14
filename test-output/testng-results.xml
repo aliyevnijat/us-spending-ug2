@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3465" started-at="2018-03-14T02:13:44Z" finished-at="2018-03-14T02:13:47Z">
+  <suite name="Default suite" duration-ms="8436" started-at="2018-03-14T03:43:33Z" finished-at="2018-03-14T03:43:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3465" started-at="2018-03-14T02:13:44Z" finished-at="2018-03-14T02:13:47Z">
+    <test name="Default test" duration-ms="8436" started-at="2018-03-14T03:43:33Z" finished-at="2018-03-14T03:43:42Z">
       <class name="com.us_spending.tests.FrameWorkTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.us_spending.tests.FrameWorkTest@5e3a8624]" name="setUp" is-config="true" duration-ms="3446" started-at="2018-03-14T02:13:44Z" finished-at="2018-03-14T02:13:47Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.us_spending.tests.FrameWorkTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="8406" started-at="2018-03-14T03:43:33Z" finished-at="2018-03-14T03:43:42Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,7 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="frameWorkTest()[pri:0, instance:com.us_spending.tests.FrameWorkTest@5e3a8624]" name="frameWorkTest" duration-ms="6" started-at="2018-03-14T02:13:47Z" finished-at="2018-03-14T02:13:47Z">
+        <test-method status="PASS" signature="frameWorkTest()[pri:0, instance:com.us_spending.tests.FrameWorkTest@6f7fd0e6]" name="frameWorkTest" duration-ms="12" started-at="2018-03-14T03:43:42Z" finished-at="2018-03-14T03:43:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frameWorkTest -->
