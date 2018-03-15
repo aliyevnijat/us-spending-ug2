@@ -9,17 +9,17 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 public class TestBaseClass {
-	protected WebDriver driver;
-	@Parameters("browser")
+protected WebDriver driver;
+	
 	@BeforeClass(alwaysRun=true)
-	public void setUp(@Optional String browser) {
-		driver = Driver.getDriver(browser);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(Configuration.getProperties("url"));
+	public void setUp() {
+		driver=Driver.getDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get(Configuration.getProperty("test_url"));
 	}
 	
-	//@AfterClass(alwaysRun=true)
+	@AfterClass(alwaysRun=true)
 	public void tearDown() {
-		Driver.driverQuit();
+		Driver.closeDriver();
 	}
 }

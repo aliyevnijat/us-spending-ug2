@@ -2,28 +2,39 @@ package com.us_spending.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
+private Driver() {}
+	
 	private static WebDriver driver;
 
-	public static WebDriver getDriver(String browser) {
-		if (browser == null) {
-			browser = Configuration.getProperties("browser");
-			switch (browser) {
+	public static WebDriver getDriver() {
+		if (driver == null) {
+			switch (Configuration.getProperty("browser")) {
+			case "firefox":
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+				break;
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				break;
-
 			default:
-				break;
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
 			}
 		}
 		return driver;
 	}
 
-	public static void driverQuit() {
-		driver.quit();
+
+	public static void closeDriver() {
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
 	}
 }
