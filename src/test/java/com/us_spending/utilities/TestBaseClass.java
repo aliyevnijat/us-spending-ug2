@@ -15,10 +15,10 @@ protected WebDriver driver;
 	public void setUp() {
 		driver=Driver.getDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get(Configuration.getProperty("test_url"));
+		driver.get(Configuration.getProperty("url"));
 	}
 	
-	@AfterClass(alwaysRun=true)
+	//@AfterClass(alwaysRun=true)
 	public void tearDown() {
 		Driver.closeDriver();
 	}
