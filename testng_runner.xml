@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="US Spending Tests" verbose="2">
+	<test name="Automated tests">
+		<classes>
+			<class name="com.us_spending.tests.UsSpendingTestCase"></class>
+		</classes>
+	</test>
+</suite>
