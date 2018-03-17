@@ -23,7 +23,7 @@ public class AgencyPage {
 	@FindBy(xpath="//*[contains(text(), 'Privacy Policy')]")
 	public WebElement PrivacyPolicy;
 	
-	@FindBy(xpath="//footer[@class='footer-outer-wrap'  ]//div[@class='copyright']//a[@title]")
+	@FindBy(xpath="//a[. = 'click here']")
 	public WebElement ClickHere;
 	
 	public boolean isTitle(String title) {

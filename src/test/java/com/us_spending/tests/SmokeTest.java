@@ -2,7 +2,8 @@ package com.us_spending.tests;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.Keys;
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 
 import com.us_spending.pages.AgencyPage;
@@ -17,7 +18,7 @@ public class SmokeTest extends TestBaseClass {
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
 	
 	
-	HomePage homePage;
+	HomePage homePage = new HomePage(driver);
 	
 	
 	@Test(priority = 0)

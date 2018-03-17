@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5453" started-at="2018-03-15T23:30:21Z" finished-at="2018-03-15T23:30:26Z">
+  <suite name="Default suite" duration-ms="6057" started-at="2018-03-17T04:11:37Z" finished-at="2018-03-17T04:11:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5453" started-at="2018-03-15T23:30:21Z" finished-at="2018-03-15T23:30:26Z">
-      <class name="com.us_spending.tests.SmokeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.SmokeTest@3bfdc050]" name="setUp" is-config="true" duration-ms="3175" started-at="2018-03-15T23:30:21Z" finished-at="2018-03-15T23:30:24Z">
+    <test name="Default test" duration-ms="6057" started-at="2018-03-17T04:11:37Z" finished-at="2018-03-17T04:11:43Z">
+      <class name="com.us_spending.tests.UsSpendingTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@3bfdc050]" name="setUp" is-config="true" duration-ms="4870" started-at="2018-03-17T04:11:37Z" finished-at="2018-03-17T04:11:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="smokeTest1()[pri:0, instance:com.us_spending.tests.SmokeTest@3bfdc050]" name="smokeTest1" duration-ms="161" started-at="2018-03-15T23:30:24Z" finished-at="2018-03-15T23:30:24Z">
+        <test-method status="PASS" signature="testCase7()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@3bfdc050]" name="testCase7" duration-ms="1161" started-at="2018-03-17T04:11:42Z" finished-at="2018-03-17T04:11:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- smokeTest1 -->
-        <test-method status="PASS" signature="smokeTest2()[pri:1, instance:com.us_spending.tests.SmokeTest@3bfdc050]" name="smokeTest2" duration-ms="2100" started-at="2018-03-15T23:30:24Z" finished-at="2018-03-15T23:30:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeTest2 -->
-      </class> <!-- com.us_spending.tests.SmokeTest -->
+        </test-method> <!-- testCase7 -->
+      </class> <!-- com.us_spending.tests.UsSpendingTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

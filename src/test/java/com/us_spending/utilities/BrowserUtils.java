@@ -96,6 +96,10 @@ public class BrowserUtils {
 		}
 		driver.switchTo().window(origin);
 	}
+	public static void switchToTab(ArrayList<String> tabs, int tabNumber) {
+		    driver.switchTo().window(tabs.get(1));
+	}
+	
 	public static double StringToDouble(String str) {
 		double num = 0;
 		String str1 = "";
@@ -106,4 +110,11 @@ public class BrowserUtils {
 		}
 		return num = Double.parseDouble(str1);
 	}
+	
+	public static void scroll(WebElement element) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true)", element);
+	}
+
+	
 }

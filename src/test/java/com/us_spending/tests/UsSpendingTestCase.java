@@ -2,11 +2,17 @@ package com.us_spending.tests;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.us_spending.pages.AgencyPage;
 import com.us_spending.pages.HomePage;
 import com.us_spending.pages.PrivacyPage;
+import com.us_spending.utilities.BrowserUtils;
 import com.us_spending.utilities.TestBaseClass;
 
 public class UsSpendingTestCase extends TestBaseClass {
@@ -18,25 +24,36 @@ public class UsSpendingTestCase extends TestBaseClass {
 	String title = "USAspending.gov";
 	String urlHomePage = "https://www.usaspending.gov/#/";
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
+	String urlDBpage = "https://www.usaspending.gov/#/db_info";
 	
-	
+	//@Test
+	public void testCase1() {
+		 hp=new HomePage(driver);
+		 assertTrue(hp.isTitle(title));
+		 assertTrue(hp.isUrl(urlHomePage));
+		 hp.clickButton(hp.profiles, hp.agencies);
+		 assertTrue(hp.isUrl(urlAgencyPage));
+		 ap = new AgencyPage(driver);
+		 ap.search.sendKeys("Department of Homeland Security");
+	}
 	@Test
-	public void TestCase7() throws InterruptedException {
+	public void testCase7() throws InterruptedException {
 		hp=new HomePage(driver);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
 		assertTrue(hp.isUrl(urlAgencyPage));
-		Thread.sleep(4000);
+		ap = new AgencyPage(driver);
+		ap.search.sendKeys("");
+		BrowserUtils.scroll(ap.ClickHere);
 		ap.ClickHere.click();
-		String handle= driver.getWindowHandle();
-		driver.switchTo().window(handle);
+		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		BrowserUtils.switchToTab(tabs,1); 
 		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		
+		assertTrue(hp.isUrl(urlDBpage));	
 	}
-//	@Test
-	public void TestCase8() throws InterruptedException {
+	//@Test
+	public void testCase8() throws InterruptedException {
 		hp=new HomePage(driver);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
