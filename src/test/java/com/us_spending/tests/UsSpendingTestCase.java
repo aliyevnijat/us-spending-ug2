@@ -4,9 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+
 import org.testng.annotations.Test;
 
 import com.us_spending.pages.AgencyPage;
@@ -26,7 +24,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
 	String urlDBpage = "https://www.usaspending.gov/#/db_info";
 	
-	//@Test
+	@Test(priority = 0, description = "USAHM001")
 	public void testCase1() {
 		 hp=new HomePage(driver);
 		 assertTrue(hp.isTitle(title));
@@ -34,10 +32,14 @@ public class UsSpendingTestCase extends TestBaseClass {
 		 hp.clickButton(hp.profiles, hp.agencies);
 		 assertTrue(hp.isUrl(urlAgencyPage));
 		 ap = new AgencyPage(driver);
+		 ap.search.clear();
 		 ap.search.sendKeys("Department of Homeland Security");
+		 assertTrue(ap.numResult.isDisplayed());
+		 assertTrue(ap.searchBox.getAttribute("value").equals("Department of Homeland Security"));
+		 assertTrue(ap.searchedAgencyName.isDisplayed(), ap.searchedAgencyName.getText());
 	}
-	@Test
-	public void testCase7() throws InterruptedException {
+	@Test(priority = 1, description = "USAHM007")
+	public void testCase7()  {
 		hp=new HomePage(driver);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));

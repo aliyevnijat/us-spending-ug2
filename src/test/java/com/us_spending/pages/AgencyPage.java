@@ -1,6 +1,6 @@
 package com.us_spending.pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +25,15 @@ public class AgencyPage {
 	
 	@FindBy(xpath="//a[. = 'click here']")
 	public WebElement ClickHere;
+	
+	@FindBy(xpath = "//div[.='1 result']")
+	public WebElement numResult;
+	
+	@FindBy(css = ".search-section__input")
+	public WebElement searchBox;
+	
+	@FindBy(css = ".matched")
+	public WebElement searchedAgencyName;
 	
 	public boolean isTitle(String title) {
 		return driver.getTitle().equals(title);

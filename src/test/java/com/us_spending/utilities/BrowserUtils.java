@@ -97,7 +97,7 @@ public class BrowserUtils {
 		driver.switchTo().window(origin);
 	}
 	public static void switchToTab(ArrayList<String> tabs, int tabNumber) {
-		    driver.switchTo().window(tabs.get(1));
+		    driver.switchTo().window(tabs.get(tabNumber));
 	}
 	
 	public static double StringToDouble(String str) {
