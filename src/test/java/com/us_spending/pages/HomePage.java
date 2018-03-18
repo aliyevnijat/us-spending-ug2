@@ -44,4 +44,24 @@ public class HomePage {
 	@FindBy(id = "logo")
 	public WebElement goTohomePage;
 	
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/button")
+	public WebElement btnDwnldCntr;
+	
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[1]/a")
+	public WebElement btnAwardDataArchive;
+	 
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[2]/a") 
+	public WebElement btnCustomAwardData;
+	
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[4]/a")
+	public WebElement btnAgencySubmissionFiles;
+	
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[5]/button")
+	public WebElement btnDataBaseSnapshots;
+	
+	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/"
+			+ "header/nav/div/div[4]/ul/li[4]/div/div/ul/li[6]/a")
+	public WebElement btnAPI;
+	
+	
 }

@@ -4,7 +4,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.us_spending.pages.AgencyPage;
@@ -54,7 +56,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());	
 	}
-	//@Test
+	//@Test (priority = 2, description = "USAHM008")
 	public void testCase8() throws InterruptedException {
 		hp=new HomePage(driver);
 		assertTrue(hp.isTitle(title));
@@ -68,5 +70,21 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(pp.Privacytop.getText().equals("Legal"));
 		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));	
 	}
+	
+	@Test(priority = 2, description = "USAHM015")
+	public void testCase15()  {
+		hp = new HomePage(driver);
+		assertTrue(hp.isTitle(urlHomePage));
+		Actions mouse = new Actions(driver);
+		mouse.moveToElement(hp.btnDwnldCntr).build().perform();
+	
+		assertTrue(hp.btnAwardDataArchive.isDisplayed());
+		assertTrue(hp.btnCustomAwardData.isDisplayed());
+		assertTrue(hp.btnAgencySubmissionFiles.isDisplayed());
+		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
+		assertTrue(hp.btnAPI.isDisplayed());
+	}
+	
+	
 	
 }
