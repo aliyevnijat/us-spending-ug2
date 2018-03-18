@@ -34,6 +34,8 @@ public class HomePage {
 		 element2.click();
 	}
 	
+	@FindBy(xpath="//span[.='Spending Explorer']")//Shavkat's
+	public WebElement spendEx;
 	
 	@FindBy(xpath = "//button [@class='nav-dropdown__parent ' and @title='Profiles: Learn more about organizations and accounts']")
 	public WebElement profiles;

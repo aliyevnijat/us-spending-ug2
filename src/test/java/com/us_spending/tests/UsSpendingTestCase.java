@@ -3,6 +3,7 @@ package com.us_spending.tests;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -85,6 +86,16 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isUrl(urlHomePage));
 		assertTrue(pp.Privacytop.getText().equals("Legal"));
 		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));	
+	}
+	
+	@Test(priority = 627, description="USRID012")//Shavkat's
+	public void testCase12() {
+		 hp=new HomePage(driver);
+		 driver.manage().window().maximize();
+		 assertTrue(hp.isTitle(title));
+		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 hp.spendEx.click();
+		 
 	}
 	
 	@Test(priority = 3, description = "USAHM015")
