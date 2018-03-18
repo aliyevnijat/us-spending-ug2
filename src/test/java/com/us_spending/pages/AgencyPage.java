@@ -26,7 +26,7 @@ public class AgencyPage {
 	@FindBy(xpath="//a[. = 'click here']")
 	public WebElement ClickHere;
 	
-	@FindBy(xpath = "//div[.='1 result']")
+	@FindBy(css = ".results-count")
 	public WebElement numResult;
 	
 	@FindBy(css = ".search-section__input")
@@ -34,6 +34,10 @@ public class AgencyPage {
 	
 	@FindBy(css = ".matched")
 	public WebElement searchedAgencyName;
+	
+	@FindBy(css = ".results-table-message")
+	public WebElement noResultFound;
+	
 	
 	public boolean isTitle(String title) {
 		return driver.getTitle().equals(title);

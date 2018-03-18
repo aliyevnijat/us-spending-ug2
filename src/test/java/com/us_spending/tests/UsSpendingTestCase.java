@@ -40,8 +40,24 @@ public class UsSpendingTestCase extends TestBaseClass {
 		 assertTrue(ap.searchBox.getAttribute("value").equals("Department of Homeland Security"));
 		 assertTrue(ap.searchedAgencyName.isDisplayed(), ap.searchedAgencyName.getText());
 	}
-	@Test(priority = 1, description = "USAHM007")
+	@Test(priority = 1, description = "USAHM002")
+	public void testCase2() {
+		 BrowserUtils.waitFor(2);
+		 hp=new HomePage(driver);
+		 assertTrue(hp.isTitle(title));
+		 assertTrue(hp.isUrl(urlHomePage));
+		 hp.clickButton(hp.profiles, hp.agencies);
+		 assertTrue(hp.isUrl(urlAgencyPage));
+		 ap = new AgencyPage(driver);
+		 ap.search.clear();
+		 ap.search.sendKeys("babakuly");
+		 assertTrue(ap.numResult.isDisplayed());
+		 assertTrue(ap.searchBox.getAttribute("value").equals("babakuly"));
+		 assertTrue(ap.noResultFound.isDisplayed(), ap.noResultFound.getText());
+	}
+	@Test(priority = 2, description = "USAHM007")
 	public void testCase7()  {
+		BrowserUtils.waitFor(2);
 		hp=new HomePage(driver);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
@@ -71,7 +87,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));	
 	}
 	
-	@Test(priority = 2, description = "USAHM015")
+	@Test(priority = 3, description = "USAHM015")
 	public void testCase15()  {
 		hp = new HomePage(driver);
 		assertTrue(hp.isUrl(urlHomePage));
