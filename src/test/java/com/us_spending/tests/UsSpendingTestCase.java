@@ -93,7 +93,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		 hp=new HomePage(driver);
 		 driver.manage().window().maximize();
 		 assertTrue(hp.isTitle(title));
-		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		 hp.spendEx.click();
 		 
 	}
