@@ -74,7 +74,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 	@Test(priority = 2, description = "USAHM015")
 	public void testCase15()  {
 		hp = new HomePage(driver);
-		assertTrue(hp.isTitle(urlHomePage));
+		assertTrue(hp.isUrl(urlHomePage));
 		Actions mouse = new Actions(driver);
 		mouse.moveToElement(hp.btnDwnldCntr).build().perform();
 	
