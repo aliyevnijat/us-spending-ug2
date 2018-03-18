@@ -96,6 +96,16 @@ public class BrowserUtils {
 		}
 		driver.switchTo().window(origin);
 	}
+	public static void switchToWindowUrl(String url) {
+		String origin = driver.getWindowHandle();
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+			if (driver.getCurrentUrl().equals(url)) {
+				return;
+			}
+		}
+		driver.switchTo().window(origin);
+	}
 	public static void switchToTab(ArrayList<String> tabs, int tabNumber) {
 		    driver.switchTo().window(tabs.get(tabNumber));
 	}

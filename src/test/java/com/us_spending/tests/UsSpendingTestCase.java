@@ -49,10 +49,10 @@ public class UsSpendingTestCase extends TestBaseClass {
 		ap.search.sendKeys("");
 		BrowserUtils.scroll(ap.ClickHere);
 		ap.ClickHere.click();
-		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-		BrowserUtils.switchToTab(tabs,1); 
+		BrowserUtils.waitFor(3);
+		BrowserUtils.switchToWindowUrl(urlDBpage);
 		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlDBpage));	
+		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());	
 	}
 	//@Test
 	public void testCase8() throws InterruptedException {
