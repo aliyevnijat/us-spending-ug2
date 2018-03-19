@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -109,6 +110,10 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.btnAPI.isDisplayed());
 	}
 	
+	@Test (priority=19)////USILY 019 MARIA DOBROKHODOVA
+	public void signIn() throws InterruptedException {
+		 driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		 driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/header/nav/div/div[4]/ul/li[1]/a")).click();
+		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
 	
-	
-}
+}}
