@@ -2,11 +2,8 @@ package com.us_spending.tests;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
