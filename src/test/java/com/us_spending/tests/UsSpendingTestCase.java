@@ -147,7 +147,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		List<WebElement> list = ap.budgetaryRecuorcesFormatLlist;
 		for (WebElement row : list) {
 			System.out.println(row.getText());
-		
+		//NEW COMMENT
 		
 	}
 	}
