@@ -19,7 +19,7 @@ protected WebDriver driver;
 		driver.get(Configuration.getProperty("url"));
 	}
 	
-	//@AfterClass(alwaysRun=true)
+	@AfterClass(alwaysRun=true)
 	public void tearDown() {
 		Driver.closeDriver();
 	}

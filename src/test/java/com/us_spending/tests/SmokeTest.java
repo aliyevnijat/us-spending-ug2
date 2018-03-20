@@ -18,12 +18,12 @@ public class SmokeTest extends TestBaseClass {
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
 	
 	
-	HomePage homePage = new HomePage(driver);
+	HomePage homePage = new HomePage();
 	
 	
 	@Test(priority = 0)
 	public void smokeTest1 (){
-		homePage = new HomePage(driver);
+	
 		assertTrue(homePage.isTitle(title));
 		assertTrue(homePage.isUrl(urlHomePage));
 		homePage.clickButton(homePage.profiles, homePage.agencies);
