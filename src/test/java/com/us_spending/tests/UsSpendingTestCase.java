@@ -159,4 +159,24 @@ public class UsSpendingTestCase extends TestBaseClass {
 		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
 
 	}
+	
+	@Test(priority = 13, description = "USRID013")
+	 public void testCase13() {  
+	  driver.manage().window().maximize();
+	  assertTrue(hp.isTitle(title));
+	  Actions actions = new Actions(driver);
+	  actions.moveToElement(hp.profiles).perform();
+
+	 }
+	 
+	 @Test(priority = 14, description = "USRID014")
+	 public void testCase14() {  
+	  driver.manage().window().maximize();
+	  assertTrue(hp.isTitle(title));
+	  Actions actions = new Actions(driver);
+	  actions.moveToElement(hp.awardSearch).perform();
+
+	 }
+	
+
 }

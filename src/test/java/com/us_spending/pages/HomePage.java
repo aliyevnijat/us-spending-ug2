@@ -73,5 +73,8 @@ public class HomePage {
 			+ "header/nav/div/div[4]/ul/li[4]/div/div/ul/li[6]/a")
 	public WebElement btnAPI;
 	
+	@FindBy(xpath="//div[.='Award Search']")  
+	 public WebElement awardSearch;
+	
 	
 }
