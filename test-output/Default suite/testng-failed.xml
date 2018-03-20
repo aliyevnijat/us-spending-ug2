@@ -5,8 +5,9 @@
     <classes>
       <class name="com.us_spending.tests.UsSpendingTestCase">
         <methods>
-          <include name="testCase7"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testCase2"/>
         </methods>
       </class> <!-- com.us_spending.tests.UsSpendingTestCase -->
     </classes>
