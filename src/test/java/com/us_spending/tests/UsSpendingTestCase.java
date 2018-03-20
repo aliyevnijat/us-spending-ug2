@@ -95,10 +95,11 @@ public class UsSpendingTestCase extends TestBaseClass {
 
 	@Test(priority = 12, description = "USRID012") 
 	public void testCase12() {
-
 		driver.manage().window().maximize();
 		assertTrue(hp.isTitle(title));		
 		hp.spendEx.click();
+		assertTrue(hp.spendEx.isDisplayed());
+		
 
 	}
 
