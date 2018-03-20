@@ -2,6 +2,7 @@ package com.us_spending.tests;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -114,6 +115,37 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.btnAgencySubmissionFiles.isDisplayed());
 		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
 		assertTrue(hp.btnAPI.isDisplayed());
+	}
+
+	@Test(priority = 5, description = "USAHM005")
+	public void TestCase5() {
+		
+		assertTrue(hp.isUrl(urlHomePage));
+		assertTrue(hp.isTitle(title));
+		hp.clickButton(hp.profiles, hp.agencies);
+		
+		assertTrue(ap.isUrl(urlAgencyPage));
+		assertTrue(ap.isTitle(title));
+		ap.clickButton(ap.agencyName);
+		//agencyPage.clickButton(agencyPage.agencyName);
+		ap.clickButton(ap.arrowDown);
+		ap.clickButton(ap.arrowUp);
+	}
+	@Test(priority = 6, description = "USAHM006")
+	public void TestCase6() {
+		assertTrue(hp.isUrl(urlHomePage));
+		assertTrue(hp.isTitle(title));
+		hp.clickButton(hp.profiles, hp.agencies);
+		
+		assertTrue(ap.isUrl(urlAgencyPage));
+		assertTrue(ap.isTitle(title));
+		
+		List<WebElement> list = ap.budgetaryRecuorcesFormatLlist;
+		for (WebElement row : list) {
+			System.out.println(row.getText());
+		
+		
+	}
 	}
 
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
