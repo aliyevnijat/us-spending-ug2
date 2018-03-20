@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -56,7 +57,8 @@ public class UsSpendingTestCase extends TestBaseClass {
 
 	@Test(priority = 7, description = "USAHM007")
 	public void testCase7() {
-		BrowserUtils.waitFor(2);
+		//BrowserUtils.waitFor(2);
+		BrowserUtils.waitForPageToLoad(2);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
@@ -67,6 +69,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(3);
 		BrowserUtils.switchToWindowUrl(urlDBpage);
 		assertTrue(hp.isTitle(title));
+		BrowserUtils.waitForPageToLoad(2);
 		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
 	}
 
