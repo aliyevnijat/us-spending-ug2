@@ -83,13 +83,21 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));
 
 	}
+	
+	@Test(priority = 11, description = "USRID011")
+	public void testCase11() {		
+		driver.manage().window().maximize();
+		assertTrue(hp.isTitle(title));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(hp.profiles2).perform();
+		hp.agencies.click();
+	}
 
-	@Test(priority = 12, description = "USRID012") // Shavkat's
+	@Test(priority = 12, description = "USRID012") 
 	public void testCase12() {
 
 		driver.manage().window().maximize();
-		assertTrue(hp.isTitle(title));
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		assertTrue(hp.isTitle(title));		
 		hp.spendEx.click();
 
 	}
