@@ -94,6 +94,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isTitle(title));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(hp.profiles2).perform();
+		BrowserUtils.waitForClickablility(hp.agencies, 2);
 		hp.agencies.click();
 	}
 
