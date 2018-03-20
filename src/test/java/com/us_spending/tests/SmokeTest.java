@@ -31,7 +31,7 @@ public class SmokeTest extends TestBaseClass {
 		
 	
 		
-	}
+	} 
 	@Test(priority = 1)
 	public void smokeTest2() {
 		BrowserUtils.waitFor(2);
