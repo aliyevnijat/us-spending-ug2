@@ -95,7 +95,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
-		assertTrue(hp.isUrl(urlAgencyPage));
+		assertTrue(hp.isUrl(urlAgencyPage));	
 		ap.search.sendKeys("");
 		BrowserUtils.scroll(ap.ClickHere);
 		ap.ClickHere.click();
