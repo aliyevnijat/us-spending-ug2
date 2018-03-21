@@ -42,6 +42,9 @@ public class HomePage {
 	@FindBy(xpath="//div[.='Profiles']")  //Shavkat
 	public WebElement profiles2;
 	
+	@FindBy(linkText = "Fedaral Accounts")      //Shavkat
+	public WebElement FedaralAgencies;
+	
 	@FindBy(linkText = "Agencies")      //Shavkat
 	public WebElement agencies2;
 	
@@ -75,6 +78,16 @@ public class HomePage {
 	
 	@FindBy(xpath="//div[.='Award Search']")  
 	 public WebElement awardSearch;
+	///div[@class='nav-children']//ul[@class='nav-children__list']//li[@class='nav-children__list-item']//a[@class='nav-children__link ']
+	@FindBy(id="header-glossary-button")
+	public WebElement Glossary;
 	
+	@FindBy(xpath="//input")
+	public WebElement GlossarySearchPlace;
 	
+	@FindBy(xpath="//a[@class='nav-children__link ' and @href='#/search']")
+	public WebElement AdvanceSearch;
+ 
+	@FindBy(xpath="//a[@class='nav-children__link ' and @href='#/keyword_search']")
+	public WebElement KeywordSearch;
 }

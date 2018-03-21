@@ -152,7 +152,31 @@ public class UsSpendingTestCase extends TestBaseClass {
 		
 
 	}
-
+	@Test(priority = 13, description = "USAHM013")
+	public void testCase13() {
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.isUrl(urlHomePage));
+		Actions mouse = new Actions(driver);
+		BrowserUtils.waitForPageToLoad(2);
+		mouse.moveToElement(hp.awardSearch).build().perform();
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.AdvanceSearch.isDisplayed());
+		assertTrue(hp.KeywordSearch.isDisplayed());
+		
+	}
+	
+	@Test(priority = 14, description = "USAHM014")
+	public void testCase14() {
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.isUrl(urlHomePage));
+		Actions mouse = new Actions(driver);
+		BrowserUtils.waitForPageToLoad(2);
+		mouse.moveToElement(hp.profiles2).build().perform();
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.profiles2.isDisplayed());
+		assertTrue(hp.FedaralAgencies.isDisplayed());
+		
+	}
 	@Test(priority = 15, description = "USAHM015")
 	public void testCase15() {
 		BrowserUtils.waitFor(2);
@@ -166,7 +190,28 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
 		assertTrue(hp.btnAPI.isDisplayed());
 	}
- 
+	@Test(priority = 16, description = "USAHM016")
+	public void testCase16() {
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.isUrl(urlHomePage));
+	
+		hp.Glossary.click();
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.GlossarySearchPlace.isDisplayed());
+	}
+	
+
+	@Test(priority = 17, description = "USRID011")
+	public void testCase17() {	
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		BrowserUtils.waitForPageToLoad(2);
+		ap.search.sendKeys("administrative");
+		ap.AdministrativeConferenceButton.click();
+		ap.Converter();
+		
+	}
 
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
 	public void signIn() {
@@ -174,7 +219,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/header/nav/div/div[4]/ul/li[1]/a")).click();
 		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
 
-	}@Test(priority = 21, description = "USAHM007")
+	}@Test(priority = 21, description = "USAHM0021")
 	public void testCase7() {
 		 
 		BrowserUtils.waitForPageToLoad(2);

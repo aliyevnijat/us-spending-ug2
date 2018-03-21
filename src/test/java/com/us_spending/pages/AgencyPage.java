@@ -4,6 +4,7 @@ import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -86,6 +87,23 @@ public class AgencyPage {
 	
 	@FindBy(xpath ="//button [@class='sort-icon active']")
 	public WebElement AgencyUpLight;
+	
+	@FindBy(xpath ="//table//tbody//td[1]")
+	public WebElement AdministrativeConferenceButton;
+	
+	@FindBy(xpath="//p[@class='against-auth-text']")
+	public WebElement ObligatedAmount;
+	
+	
+	
+	
+	public void Converter() {
+		String ObligatedAmount1 = ObligatedAmount.getText();
+		System.out.println(ObligatedAmount1);
+		String cutObligatedAmount = ObligatedAmount1.substring(1,4);
+		Double DoubleObligatedAmount=Double.parseDouble(cutObligatedAmount);
+		System.out.println(DoubleObligatedAmount);
+	}
 	
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();
