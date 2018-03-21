@@ -84,7 +84,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		for (WebElement row : list) {
 			System.out.println(row.getText());
 		//NEW COMMENT
-		   
+		     
 	}
 	}
 
