@@ -45,18 +45,31 @@ public class UsSpendingTestCase extends TestBaseClass {
 
 	@Test(priority = 2, description = "USAHM002")
 	public void testCase2() {
-		BrowserUtils.waitFor(2);
-		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		hp.clickButton(hp.profiles, hp.agencies);
-		assertTrue(hp.isUrl(urlAgencyPage));
-		ap.search.clear();
-		ap.search.sendKeys("babakuly");
-		assertTrue(ap.numResult.isDisplayed());
-		assertTrue(ap.searchBox.getAttribute("value").equals("babakuly"));
-		assertTrue(ap.noResultFound.isDisplayed(), ap.noResultFound.getText());
+	 	BrowserUtils.waitFor(2);
+	 	assertTrue(hp.isTitle(title));
+	 	assertTrue(hp.isUrl(urlHomePage));
+	 	hp.clickButton(hp.profiles, hp.agencies);
+	 	assertTrue(hp.isUrl(urlAgencyPage));
+	 	ap.search.clear();
+	 	ap.search.sendKeys("babakuly");
+	 	assertTrue(ap.numResult.isDisplayed());
+	 	assertTrue(ap.searchBox.getAttribute("value").equals("babakuly"));
+	 	assertTrue(ap.noResultFound.isDisplayed(), ap.noResultFound.getText());
 	}
-
+	@Test(priority = 3, description = "USAHM002")
+	public void testCase3() {
+	 	BrowserUtils.waitFor(2);
+	 	assertTrue(hp.isTitle(title));
+	 	assertTrue(hp.isUrl(urlHomePage));
+	 	hp.clickButton(hp.profiles, hp.agencies);
+	 	assertTrue(hp.isUrl(urlAgencyPage));
+	 	ap.BudgetaryResourcesClick.click();
+	 	assertTrue(ap.BudgetaryResourcesDownLight.isDisplayed());
+	 	ap.BudgetaryResourcesClick.click();
+	 	assertTrue(ap.BudgetaryResourcesUpLight.isDisplayed());
+	 
+	}
+	 
 	@Test(priority = 5, description = "USAHM005")
 	public void TestCase5() {
 		
@@ -87,9 +100,6 @@ public class UsSpendingTestCase extends TestBaseClass {
 		     
 	}
 	}
-
-	
-
 	 @Test (priority = 8, description = "USAHM008")
 	public void testCase8() throws InterruptedException {
 	 
@@ -148,7 +158,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/header/nav/div/div[4]/ul/li[1]/a")).click();
 		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
 
-	}@Test(priority = 20, description = "USAHM007")
+	}@Test(priority = 21, description = "USAHM007")
 	public void testCase7() {
 		 
 		BrowserUtils.waitForPageToLoad(2);
@@ -161,7 +171,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		ap.ClickHere.click();
 		BrowserUtils.waitFor(3);
 		BrowserUtils.switchToWindowUrl(urlDBpage);
-		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isTitle(title));	
 		BrowserUtils.waitForPageToLoad(2);
 		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
 		

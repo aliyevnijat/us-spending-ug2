@@ -63,6 +63,16 @@ public class AgencyPage {
 	@FindBy(xpath = "(//table//tbody//tr//td[2]//div//div)")
 	public List<WebElement> budgetaryRecuorcesFormatLlist;// Bobur
 
+	@FindBy(xpath ="//table//thead//td[2]")
+	public WebElement BudgetaryResourcesClick;
+	
+	@FindBy(xpath ="//button[@class='sort-icon active']")
+	public WebElement BudgetaryResourcesDownLight;
+	
+	@FindBy(xpath ="//button[@class='sort-icon active']")
+	public WebElement BudgetaryResourcesUpLight;
+	
+	
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();
 	}
