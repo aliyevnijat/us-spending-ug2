@@ -55,7 +55,9 @@ public class UsSpendingTestCase extends TestBaseClass {
 	 	assertTrue(ap.numResult.isDisplayed());
 	 	assertTrue(ap.searchBox.getAttribute("value").equals("babakuly"));
 	 	assertTrue(ap.noResultFound.isDisplayed(), ap.noResultFound.getText());
+	
 	}
+	
 	@Test(priority = 3, description = "USAHM002")
 	public void testCase3() {
 	 	BrowserUtils.waitFor(2);
@@ -70,6 +72,18 @@ public class UsSpendingTestCase extends TestBaseClass {
 	 
 	}
 	 
+	@Test(priority = 4, description = "USAHM002")
+	public void testCase4() {
+	 	BrowserUtils.waitFor(2);
+	 	assertTrue(hp.isTitle(title));
+	 	assertTrue(hp.isUrl(urlHomePage));
+	 	hp.clickButton(hp.profiles, hp.agencies);
+	 	assertTrue(hp.isUrl(urlAgencyPage));
+	 	ap.persentageButton.click();
+	 	assertTrue(ap.persentagelightDown.isDisplayed());
+	 	ap.persentageButton.click();
+	 	assertTrue(ap.persentageUpLight.isDisplayed());
+	}
 	@Test(priority = 5, description = "USAHM005")
 	public void TestCase5() {
 		
@@ -80,10 +94,12 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(ap.isUrl(urlAgencyPage));
 		assertTrue(ap.isTitle(title));
 		ap.clickButton(ap.agencyName);
-		//agencyPage.clickButton(agencyPage.agencyName);
-		ap.clickButton(ap.arrowDown);
-		ap.clickButton(ap.arrowUp);
+	 	assertTrue(ap.AgencylightDown.isDisplayed());
+	 	ap.clickButton(ap.agencyName);
+	 	assertTrue(ap.AgencyUpLight.isDisplayed());
+	
 	}
+	
 	@Test(priority = 6, description = "USAHM006")
 	public void TestCase6() {
 		assertTrue(hp.isUrl(urlHomePage));

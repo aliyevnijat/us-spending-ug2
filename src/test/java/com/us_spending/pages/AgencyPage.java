@@ -72,6 +72,20 @@ public class AgencyPage {
 	@FindBy(xpath ="//button[@class='sort-icon active']")
 	public WebElement BudgetaryResourcesUpLight;
 	
+	@FindBy(xpath ="//table//thead//td[3]")
+	public WebElement persentageButton;
+	
+	@FindBy(xpath ="//button [@class='sort-icon active']")
+	public WebElement persentagelightDown;
+	
+	@FindBy(xpath ="//button [@class='sort-icon active']")
+	public WebElement persentageUpLight;
+
+	@FindBy(xpath ="//button [@class='sort-icon active']")
+	public WebElement AgencylightDown;
+	
+	@FindBy(xpath ="//button [@class='sort-icon active']")
+	public WebElement AgencyUpLight;
 	
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();
