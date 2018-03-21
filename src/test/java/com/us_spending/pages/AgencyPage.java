@@ -97,7 +97,7 @@ public class AgencyPage {
 	
 	
 	
-	 
+	  
 	 
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();

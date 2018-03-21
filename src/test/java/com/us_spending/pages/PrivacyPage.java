@@ -9,7 +9,7 @@ import com.us_spending.utilities.Driver;
  
 public class PrivacyPage {
 	private WebDriver driver;
-	  
+	   
 	public PrivacyPage() {
 		this.driver=Driver.getDriver() ;
 		PageFactory.initElements(driver, this);
