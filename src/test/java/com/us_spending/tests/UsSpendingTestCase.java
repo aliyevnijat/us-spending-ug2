@@ -162,7 +162,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.AdvanceSearch.isDisplayed());
 		assertTrue(hp.KeywordSearch.isDisplayed());
-		
+	 	
 	}
 	
 	@Test(priority = 14, description = "USAHM014")
