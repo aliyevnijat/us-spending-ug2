@@ -23,7 +23,7 @@ public class HomePage {
 	
 	public boolean isUrl(String url) {
 		return driver.getCurrentUrl().equals(url);
-		 
+		  
 	}
 	
 	public void goToHomePage() {

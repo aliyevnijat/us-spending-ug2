@@ -210,7 +210,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		ap.search.sendKeys("administrative");
 		ap.AdministrativeConferenceButton.click();
 		ap.Converter();
-		
+		 
 	}
  
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
