@@ -36,11 +36,17 @@ public class HomePage {
 		 element2.click();
 	}
 	
-	@FindBy(xpath="//span[.='Spending Explorer']") //Shavkat's
+	@FindBy(id = "header-glossary-button")
+	public WebElement glossary;
+	
+	@FindBy(xpath = "//input")
+	public WebElement glossarySearch;
+	
+	@FindBy(xpath="//span[.='Spending Explorer']")
 	public WebElement spendEx;
 	
-	@FindBy(xpath="//div[.='Profiles']")  //Shavkat
-	public WebElement profiles2;
+ 
+	 
 	
 	@FindBy(linkText = "Fedaral Accounts")      //Shavkat
 	public WebElement FedaralAgencies;
@@ -48,11 +54,14 @@ public class HomePage {
 	@FindBy(linkText = "Agencies")      //Shavkat
 	public WebElement agencies2;
 	
-	@FindBy(xpath = "//button [@class='nav-dropdown__parent ' and @title='Profiles: Learn more about organizations and accounts']")
+	@FindBy(xpath="//div[.='Profiles']") 
 	public WebElement profiles;
 	
-	@FindBy(xpath = "//a[@class='nav-children__link 'and @href='#/agency']")
+	@FindBy(linkText = "Agencies") 
 	public WebElement agencies;
+	
+	@FindBy(linkText = "Federal Accounts") 
+	public WebElement federalAcc;	
 	
 	@FindBy(id = "logo")	
 	public WebElement goTohomePage;
@@ -78,12 +87,23 @@ public class HomePage {
 	
 	@FindBy(xpath="//div[.='Award Search']")  
 	 public WebElement awardSearch;
-	///div[@class='nav-children']//ul[@class='nav-children__list']//li[@class='nav-children__list-item']//a[@class='nav-children__link ']
+ 
 	@FindBy(id="header-glossary-button")
 	public WebElement Glossary;
 	
+ 
 	@FindBy(xpath="//input")
 	public WebElement GlossarySearchPlace;
+ 
+	@FindBy (xpath = "//a[@class='nav-children__link ' and @href='#/search']")
+	public WebElement advancedSearch;
+	
+	@FindBy (xpath = "//a[@class='nav-children__link ' and @href='#/keyword_search']")
+	public WebElement keywordSearch;
+	
+	
+	
+ 
 	
 	@FindBy(xpath="//a[@class='nav-children__link ' and @href='#/search']")
 	public WebElement AdvanceSearch;

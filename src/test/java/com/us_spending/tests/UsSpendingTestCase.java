@@ -162,7 +162,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.AdvanceSearch.isDisplayed());
 		assertTrue(hp.KeywordSearch.isDisplayed());
-	 	 
+		
 	}
 	
 	@Test(priority = 14, description = "USAHM014")
@@ -171,9 +171,9 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isUrl(urlHomePage));
 		Actions mouse = new Actions(driver);
 		BrowserUtils.waitForPageToLoad(2);
-		mouse.moveToElement(hp.profiles2).build().perform();
+		mouse.moveToElement(hp.profiles).build().perform();
 		BrowserUtils.waitFor(2);
-		assertTrue(hp.profiles2.isDisplayed());
+		assertTrue(hp.profiles.isDisplayed());
 		assertTrue(hp.FedaralAgencies.isDisplayed());
 		
 	}
