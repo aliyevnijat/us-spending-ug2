@@ -91,7 +91,7 @@ public class HomePage {
 	@FindBy(id="header-glossary-button")
 	public WebElement Glossary;
 	
- 
+  
 	@FindBy(xpath="//input")
 	public WebElement GlossarySearchPlace;
  
