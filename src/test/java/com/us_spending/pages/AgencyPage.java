@@ -104,7 +104,7 @@ public class AgencyPage {
 		Double DoubleObligatedAmount=Double.parseDouble(cutObligatedAmount);
 		System.out.println(DoubleObligatedAmount);
 	}
-	
+	 
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();
 	}
