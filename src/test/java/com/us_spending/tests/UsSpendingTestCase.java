@@ -88,23 +88,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 	}
 	}
 
-//	@Test(priority = 7, description = "USAHM007")
-	public void testCase7() {
-		 
-		BrowserUtils.waitForPageToLoad(2);
-		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		hp.clickButton(hp.profiles, hp.agencies);
-		assertTrue(hp.isUrl(urlAgencyPage));	
-		ap.search.sendKeys("");
-		BrowserUtils.scroll(ap.ClickHere);
-		ap.ClickHere.click();
-		BrowserUtils.waitFor(3);
-		BrowserUtils.switchToWindowUrl(urlDBpage);
-		assertTrue(hp.isTitle(title));
-		BrowserUtils.waitForPageToLoad(2);
-		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
-	}
+	
 
 	 @Test (priority = 8, description = "USAHM008")
 	public void testCase8() throws InterruptedException {
@@ -119,7 +103,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitForPageToLoad(2);
 		assertTrue(driver.getCurrentUrl().contains(ppUrl));
 		
-		assertTrue(pp.Privacytop.getText().equals("Legal"));
+		assertTrue(pp.Privacytop.getText().contains("Legal"));
 		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));
 
 	}
@@ -156,7 +140,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
 		assertTrue(hp.btnAPI.isDisplayed());
 	}
-
+ 
 
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
 	public void signIn() {
@@ -164,25 +148,23 @@ public class UsSpendingTestCase extends TestBaseClass {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/header/nav/div/div[4]/ul/li[1]/a")).click();
 		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
 
-	}
-	
-	@Test(priority = 13, description = "USRID013")
-	 public void testCase13() {  
-	  driver.manage().window().maximize();
-	  assertTrue(hp.isTitle(title));
-	  Actions actions = new Actions(driver);
-	  actions.moveToElement(hp.profiles).perform();
-
-	 }
-	 
-	 @Test(priority = 14, description = "USRID014")
-	 public void testCase14() {  
-	  driver.manage().window().maximize();
-	  assertTrue(hp.isTitle(title));
-	  Actions actions = new Actions(driver);
-	  actions.moveToElement(hp.awardSearch).perform();
-
-	 }
-	
-
+	}@Test(priority = 20, description = "USAHM007")
+	public void testCase7() {
+		 
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		assertTrue(hp.isUrl(urlAgencyPage));	
+		ap.search.sendKeys("");
+		BrowserUtils.scroll(ap.ClickHere);
+		ap.ClickHere.click();
+		BrowserUtils.waitFor(3);
+		BrowserUtils.switchToWindowUrl(urlDBpage);
+		assertTrue(hp.isTitle(title));
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
+		
+		     
+	} 
 }
