@@ -120,7 +120,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 	
 	@Test(priority = 11, description = "USRID011")
 	public void testCase11() {	
-
+ 
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		 
