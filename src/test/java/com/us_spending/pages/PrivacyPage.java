@@ -16,6 +16,8 @@ public class PrivacyPage {
 		
 	}
 	
+	String url="https://www.usaspending.gov/";
+	
 	@FindBy(xpath="//h1[@id='main-focus']")
 	public WebElement Privacytop;
 	

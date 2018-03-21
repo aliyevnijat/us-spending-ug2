@@ -51,7 +51,7 @@ public class HomePage {
 	@FindBy(xpath = "//a[@class='nav-children__link 'and @href='#/agency']")
 	public WebElement agencies;
 	
-	@FindBy(id = "logo")
+	@FindBy(id = "logo")	
 	public WebElement goTohomePage;
 	
 	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/button")

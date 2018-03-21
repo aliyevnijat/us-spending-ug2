@@ -23,10 +23,12 @@ public class UsSpendingTestCase extends TestBaseClass {
 	PrivacyPage pp = new PrivacyPage() ;
 
 	String title = "USAspending.gov";
+	
 	String urlHomePage = "https://www.usaspending.gov/#/";
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
 	String urlDBpage = "https://www.usaspending.gov/#/db_info";
-
+	String ppUrl="https://www.usaspending.gov/";
+	
 	@Test(priority = 1, description = "USAHM001")
 	public void testCase1() {
 
@@ -53,72 +55,6 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(ap.numResult.isDisplayed());
 		assertTrue(ap.searchBox.getAttribute("value").equals("babakuly"));
 		assertTrue(ap.noResultFound.isDisplayed(), ap.noResultFound.getText());
-	}
-
-	@Test(priority = 7, description = "USAHM007")
-	public void testCase7() {
-		//BrowserUtils.waitFor(2);
-		BrowserUtils.waitForPageToLoad(2);
-		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		hp.clickButton(hp.profiles, hp.agencies);
-		assertTrue(hp.isUrl(urlAgencyPage));
-		ap.search.sendKeys("");
-		BrowserUtils.scroll(ap.ClickHere);
-		ap.ClickHere.click();
-		BrowserUtils.waitFor(3);
-		BrowserUtils.switchToWindowUrl(urlDBpage);
-		assertTrue(hp.isTitle(title));
-		BrowserUtils.waitForPageToLoad(2);
-		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
-	}
-
-	 //@Test (priority = 8, description = "USAHM008")
-	public void testCase8() throws InterruptedException {
-
-		assertTrue(hp.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		hp.clickButton(hp.profiles, hp.agencies);
-		assertTrue(hp.isUrl(urlAgencyPage));
-		ap.PrivacyPolicy.click();
-		assertTrue(ap.isTitle(title));
-		assertTrue(hp.isUrl(urlHomePage));
-		assertTrue(pp.Privacytop.getText().equals("Legal"));
-		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));
-
-	}
-	
-	@Test(priority = 11, description = "USRID011")
-	public void testCase11() {		
-		driver.manage().window().maximize();
-		assertTrue(hp.isTitle(title));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(hp.profiles2).perform();
-		BrowserUtils.waitForClickablility(hp.agencies, 2);
-		hp.agencies.click();
-	}
-
-	@Test(priority = 12, description = "USRID012") 
-	public void testCase12() {
-		driver.manage().window().maximize();
-		assertTrue(hp.isTitle(title));		
-		hp.spendEx.click();
-		assertTrue(hp.spendEx.isDisplayed());
-		
-
-	}
-
-	@Test(priority = 15, description = "USAHM015")
-	public void testCase15() {
-		BrowserUtils.waitFor(2);
-		assertTrue(hp.isUrl(urlHomePage));
-		Actions mouse = new Actions(driver);
-		mouse.moveToElement(hp.btnDwnldCntr).build().perform();
-		assertTrue(hp.btnAwardDataArchive.isDisplayed());
-		assertTrue(hp.btnCustomAwardData.isDisplayed());
-		assertTrue(hp.btnAgencySubmissionFiles.isDisplayed());
-		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
-		assertTrue(hp.btnAPI.isDisplayed());
 	}
 
 	@Test(priority = 5, description = "USAHM005")
@@ -151,6 +87,76 @@ public class UsSpendingTestCase extends TestBaseClass {
 		
 	}
 	}
+
+//	@Test(priority = 7, description = "USAHM007")
+	public void testCase7() {
+		//BrowserUtils.waitFor(2);
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		assertTrue(hp.isUrl(urlAgencyPage));
+		ap.search.sendKeys("");
+		BrowserUtils.scroll(ap.ClickHere);
+		ap.ClickHere.click();
+		BrowserUtils.waitFor(3);
+		BrowserUtils.switchToWindowUrl(urlDBpage);
+		assertTrue(hp.isTitle(title));
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(hp.isUrl(urlDBpage), driver.getCurrentUrl());
+	}
+
+	 @Test (priority = 8, description = "USAHM008")
+	public void testCase8() throws InterruptedException {
+	 
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		assertTrue(hp.isUrl(urlAgencyPage));
+		ap.PrivacyPolicy.click();	
+		BrowserUtils.waitFor(3);
+		assertTrue(ap.isTitle(title));
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(driver.getCurrentUrl().contains(ppUrl));
+		
+		assertTrue(pp.Privacytop.getText().equals("Legal"));
+		assertTrue(pp.PrivacyPolicy.getText().equals("Privacy Policy"));
+
+	}
+	
+	@Test(priority = 11, description = "USRID011")
+	public void testCase11() {	
+
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		 
+		hp.clickButton(hp.profiles, hp.agencies);
+	}
+
+	@Test(priority = 12, description = "USRID012") 
+	public void testCase12() {
+		driver.manage().window().maximize();
+		assertTrue(hp.isTitle(title));		
+		hp.spendEx.click();
+		assertTrue(hp.spendEx.isDisplayed());
+		
+
+	}
+
+	@Test(priority = 15, description = "USAHM015")
+	public void testCase15() {
+		BrowserUtils.waitFor(2);
+		assertTrue(hp.isUrl(urlHomePage));
+		Actions mouse = new Actions(driver);
+		BrowserUtils.waitForPageToLoad(2);
+		mouse.moveToElement(hp.btnDwnldCntr).build().perform();
+		assertTrue(hp.btnAwardDataArchive.isDisplayed());
+		assertTrue(hp.btnCustomAwardData.isDisplayed());
+		assertTrue(hp.btnAgencySubmissionFiles.isDisplayed());
+		assertTrue(hp.btnDataBaseSnapshots.isDisplayed());
+		assertTrue(hp.btnAPI.isDisplayed());
+	}
+
 
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
 	public void signIn() {
