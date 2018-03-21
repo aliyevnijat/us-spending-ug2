@@ -90,7 +90,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 
 //	@Test(priority = 7, description = "USAHM007")
 	public void testCase7() {
-		//BrowserUtils.waitFor(2);
+		 
 		BrowserUtils.waitForPageToLoad(2);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
