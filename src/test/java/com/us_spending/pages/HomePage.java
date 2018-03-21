@@ -19,7 +19,7 @@ public class HomePage {
 	public boolean isTitle(String title) {
 		return driver.getTitle().equals(title);
 		
-	}
+	} 
 	
 	public boolean isUrl(String url) {
 		return driver.getCurrentUrl().equals(url);

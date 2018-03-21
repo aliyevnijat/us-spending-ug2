@@ -90,7 +90,7 @@ public class AgencyPage {
 	
 	@FindBy(xpath ="//table//tbody//td[1]")
 	public WebElement AdministrativeConferenceButton;
-	  
+	   
 	@FindBy(xpath="//p[@class='against-auth-text']")
 	public WebElement ObligatedAmount;
 	
