@@ -97,13 +97,7 @@ public class AgencyPage {
 	
 	
 	
-	public void Converter() {
-		String ObligatedAmount1 = ObligatedAmount.getText();
-		System.out.println(ObligatedAmount1);
-		String cutObligatedAmount = ObligatedAmount1.substring(1,4);
-		Double DoubleObligatedAmount=Double.parseDouble(cutObligatedAmount);
-		System.out.println(DoubleObligatedAmount);
-	}
+	 
 	 
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();

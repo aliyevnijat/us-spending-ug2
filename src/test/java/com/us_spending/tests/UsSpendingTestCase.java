@@ -209,7 +209,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitForPageToLoad(2);
 		ap.search.sendKeys("administrative");
 		ap.AdministrativeConferenceButton.click();
-		ap.Converter();
+ 
 		 
 	}
  

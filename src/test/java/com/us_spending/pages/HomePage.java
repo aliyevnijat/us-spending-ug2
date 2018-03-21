@@ -25,7 +25,7 @@ public class HomePage {
 		return driver.getCurrentUrl().equals(url);
 		  
 	}
-	 
+	  
 	public void goToHomePage() {
 		driver.get("https://www.usaspending.gov/#/");
 	}
