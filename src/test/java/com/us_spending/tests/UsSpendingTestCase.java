@@ -31,7 +31,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 	
 	@Test(priority = 1, description = "USAHM001")
 	public void testCase1() {
-
+  
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
