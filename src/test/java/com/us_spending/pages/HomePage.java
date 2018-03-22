@@ -89,7 +89,6 @@ public class HomePage {
 	@FindBy(id="header-glossary-button")
 	public WebElement Glossary;
 	
-  
 	@FindBy(xpath="//input")
 	public WebElement GlossarySearchPlace;
  
@@ -99,13 +98,23 @@ public class HomePage {
 	@FindBy (xpath = "//a[@class='nav-children__link ' and @href='#/keyword_search']")
 	public WebElement keywordSearch;
 	
-	
-	
- 
-	
 	@FindBy(xpath="//a[@class='nav-children__link ' and @href='#/search']")
 	public WebElement AdvanceSearch;
  
 	@FindBy(xpath="//a[@class='nav-children__link ' and @href='#/keyword_search']")
 	public WebElement KeywordSearch;
+	
+	@FindBy(xpath="//table//td[.='Department of Housing and Urban Development (HUD)']")
+	public WebElement departmentName;
+	
+	@FindBy(xpath="//table//td[.='Department of Housing and Urban Development (HUD)']/..//td[2]")
+	public WebElement departmentBudget;
+	
+	@FindBy(tagName="h3")
+	public WebElement departmentName2;
+	
+	@FindBy(xpath="//div[class='authority-amount']")
+	public WebElement departmentBudget2;
+	
+	
 }

@@ -218,10 +218,17 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
 		ap.test();
+		System.out.println(hp.departmentName.getText());
+		System.out.println(hp.departmentBudget.getText());
 		ap.DepartmentofHousing.click();
-		System.out.println(ap.DepartmentofHousingAmount.getText());
 		
+		System.out.println(hp.departmentName2.getText());
+		
+		System.out.println(hp.departmentBudget2.getText());
+//		assertTrue(hp.departmentName.getText().equals(hp.departmentName2.getText()));
+//		assertTrue(hp.departmentBudget.getText().equals(hp.departmentBudget2.getText()));
 	}
+	
 	@Test(priority = 21, description = "USAHM0021")
 	public void testCase7() {
 		  
