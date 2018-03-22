@@ -94,11 +94,33 @@ public class AgencyPage {
 	@FindBy(xpath="//p[@class='against-auth-text']")
 	public WebElement ObligatedAmount;
 	
+	@FindBy(xpath="//table//tbody//td[1]")
+	public List<WebElement> AgencyNames;
+	
+	@FindBy(xpath="//table//tbody//td[2]")
+	public List<WebElement> AgencyAmount;
+	 
+	public void test()   {
+		  
+		  int row = 0;
+		  for (int i = 0; i < AgencyNames.size(); i++) {
+		   if(AgencyNames.get(i).getText().contains("Department of Housing and Urban Development (HUD)")) {
+		    row = i;
+		   }
+		  }
+		  System.out.println("row= "+row);
+		   
+		   System.out.println(AgencyAmount.get(row).getText());
+	}
+	 
+	
+	@FindBy(xpath=" //a[. = 'Department of Housing and Urban Development (HUD)']")
+	public WebElement DepartmentofHousing;
+	
+	@FindBy(xpath=" //div[@class='authority-amount']")
+	public WebElement DepartmentofHousingAmount;
 	
 	
-	 
-	  
-	 
 	public void clickButton(WebElement element1) {// Bobur
 		element1.click();
 	}

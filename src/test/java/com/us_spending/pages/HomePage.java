@@ -50,7 +50,7 @@ public class HomePage {
 	
 	@FindBy(linkText = "Federal Accounts")      //Shavkat
 	public WebElement FedaralAgencies;
-	
+
 	@FindBy(linkText = "Agencies")      //Shavkat
 	public WebElement agencies2;
 	
@@ -60,8 +60,7 @@ public class HomePage {
 	@FindBy(linkText = "Agencies") 
 	public WebElement agencies;
 	
-	@FindBy(linkText = "Federal Accounts") 
-	public WebElement federalAcc;	
+	 	
 	
 	@FindBy(id = "logo")	
 	public WebElement goTohomePage;

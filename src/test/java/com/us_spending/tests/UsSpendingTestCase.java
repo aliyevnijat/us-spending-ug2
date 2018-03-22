@@ -175,8 +175,8 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.profiles.isDisplayed());
 		assertTrue(hp.FedaralAgencies.isDisplayed());
-		
 	}
+	
 	@Test(priority = 15, description = "USAHM015")
 	public void testCase15() {
 		BrowserUtils.waitFor(2);
@@ -200,7 +200,6 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.GlossarySearchPlace.isDisplayed());
 	}
 	
-
 	@Test(priority = 17, description = "USRID011")
 	public void testCase17() {	
 		assertTrue(hp.isTitle(title));
@@ -215,11 +214,15 @@ public class UsSpendingTestCase extends TestBaseClass {
  
 	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
 	public void signIn() {
- 
-		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/header/nav/div/div[4]/ul/li[1]/a")).click();
-		driver.navigate().to("https://www.usaspending.gov/#/explorer/agency");
-
-	}@Test(priority = 21, description = "USAHM0021")
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		ap.test();
+		ap.DepartmentofHousing.click();
+		System.out.println(ap.DepartmentofHousingAmount.getText());
+		
+	}
+	@Test(priority = 21, description = "USAHM0021")
 	public void testCase7() {
 		  
 		BrowserUtils.waitForPageToLoad(2);
