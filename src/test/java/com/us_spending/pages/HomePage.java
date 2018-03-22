@@ -48,7 +48,7 @@ public class HomePage {
  
 	 
 	
-	@FindBy(linkText = "Fedaral Accounts")      //Shavkat
+	@FindBy(linkText = "Federal Accounts")      //Shavkat
 	public WebElement FedaralAgencies;
 	
 	@FindBy(linkText = "Agencies")      //Shavkat
@@ -66,23 +66,22 @@ public class HomePage {
 	@FindBy(id = "logo")	
 	public WebElement goTohomePage;
 	
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/button")
+	@FindBy (xpath = "//div[@class='nav-dropdown__parent-label'][contains(text(),'Download Center')]")
 	public WebElement btnDwnldCntr;
 	
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[1]/a")
+	@FindBy (xpath = "//a[@href='#/download_center/award_data_archive']")
 	public WebElement btnAwardDataArchive;
 	 
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[2]/a") 
+	@FindBy (xpath = "//a[contains(@class,'nav-children__link')][contains(text(),'Custom Award Data')]") 
 	public WebElement btnCustomAwardData;
 	
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[4]/a")
+	@FindBy (xpath = "//a[contains(@class,'nav-children__link')][contains(text(),'Agency Submission Files')]")
 	public WebElement btnAgencySubmissionFiles;
 	
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/header/nav/div/div[4]/ul/li[4]/div/div/ul/li[5]/button")
+	@FindBy (xpath = "//button[@class='nav-children__link']")
 	public WebElement btnDataBaseSnapshots;
 	
-	@FindBy (xpath = "//*[@id=\"app\"]/div/div/div[1]/"
-			+ "header/nav/div/div[4]/ul/li[4]/div/div/ul/li[6]/a")
+	@FindBy (xpath = "//a[contains(@class,'nav-children__link')][contains(text(),'API')]")
 	public WebElement btnAPI;
 	
 	@FindBy(xpath="//div[.='Award Search']")  
