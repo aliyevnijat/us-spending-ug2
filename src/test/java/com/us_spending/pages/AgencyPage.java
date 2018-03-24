@@ -155,6 +155,24 @@ public class AgencyPage {
 	 }
 	}
 	public void secondList() {
+		
+		List<String> listTwo = new ArrayList<>();
+		String str = "";
+		StringBuilder s = new StringBuilder("something");
+		StringBuilder sTemp = new StringBuilder("something");
+		
+		for(int i=0; i<agencyNameList.size(); i++) {
+			str = agencyNameList.get(i).toString();
+			searchBox.sendKeys(str);
+			
+			for(int k=0; k<listTwo.size(); k++) {
+//				listTwo = listTwo(k).add(agencyNameList.get(i).toString().toUpperCase());
+//			s = replace(0,s.length()-1,agencyNameList.get(i).toString());
+//			searchBox.sendKeys(agencyNameList.get(i)); //we need to type the agency names from the list into the Search Box
+			}
+		
+		
+		
 		for(int i=0; i<agencyNameList.size(); i++) {
 			searchBox.sendKeys(agencyNameList.get(i)); //we need to type the agency names from the list into the Search Box
 		}
