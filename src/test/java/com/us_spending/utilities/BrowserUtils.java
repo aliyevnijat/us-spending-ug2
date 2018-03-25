@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.*;
@@ -18,31 +19,31 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BrowserUtils {
 	private static WebDriver driver = Driver.getDriver();
 
-	public static List<String> getElementsText(By locator){
-		
-		 List<WebElement> elems =driver.findElements(locator);
-		 List<String> elemTexts = new ArrayList<>();
+	public static List<String> getElementsText(By locator) {
 
-		 for(WebElement el : elems) {
-		 	if(!el.getText().isEmpty()) {
-		 		elemTexts.add(el.getText());
-		 	}
-		 }
-		 return elemTexts;
-	}
-	
-	public static List<String> getElementsText(List<WebElement> elements){		
-	
-		 List<String> elemTexts = new ArrayList<>();
+		List<WebElement> elems = driver.findElements(locator);
+		List<String> elemTexts = new ArrayList<>();
 
-		 for(WebElement el : elements) {
-		 	if(!el.getText().isEmpty()) {
-		 		elemTexts.add(el.getText());
-		 	}
-		 }
-		 return elemTexts;
+		for (WebElement el : elems) {
+			if (!el.getText().isEmpty()) {
+				elemTexts.add(el.getText());
+			}
+		}
+		return elemTexts;
 	}
-	
+
+	public static List<String> getElementsText(List<WebElement> elements) {
+
+		List<String> elemTexts = new ArrayList<>();
+
+		for (WebElement el : elements) {
+			if (!el.getText().isEmpty()) {
+				elemTexts.add(el.getText());
+			}
+		}
+		return elemTexts;
+	}
+
 	public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
 		WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
 		return wait.until(ExpectedConditions.visibilityOf(element));
@@ -97,7 +98,7 @@ public class BrowserUtils {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void switchToWindow(String targetTitle) {
 		String origin = driver.getWindowHandle();
 		for (String handle : driver.getWindowHandles()) {
@@ -108,6 +109,7 @@ public class BrowserUtils {
 		}
 		driver.switchTo().window(origin);
 	}
+
 	public static void switchToWindowUrl(String url) {
 		String origin = driver.getWindowHandle();
 		for (String handle : driver.getWindowHandles()) {
@@ -118,25 +120,48 @@ public class BrowserUtils {
 		}
 		driver.switchTo().window(origin);
 	}
+
 	public static void switchToTab(ArrayList<String> tabs, int tabNumber) {
-		    driver.switchTo().window(tabs.get(tabNumber));
+		driver.switchTo().window(tabs.get(tabNumber));
 	}
-	
+
 	public static double StringToDouble(String str) {
 		double num = 0;
 		String str1 = "";
 		for (int i = 0; i < str.length(); i++) {
-			if (Character.isDigit(str.charAt(i))|| str.charAt(i)=='.') {
+			if (Character.isDigit(str.charAt(i)) || str.charAt(i) == '.') {
 				str1 = str1 + str.charAt(i);
 			}
 		}
 		return num = Double.parseDouble(str1);
 	}
-	
+
 	public static void scroll(WebElement element) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true)", element);
 	}
 
-	
+	public static void hover(WebElement element) {
+		Actions action = new Actions(Driver.getDriver());
+		action.moveToElement(element).perform();
+		// waitFor(1);
+	}
+
+	public static double extractNumberFromString(String targetString) {
+		String onlyNumber = "";
+		double number = 0.0;
+		for (int i = 0; i < targetString.length(); i++) {
+			char eachChar = targetString.charAt(i);
+			if (Character.isDigit(eachChar) || eachChar == '.') {
+				onlyNumber = onlyNumber + eachChar; // onlyNumber+=eachChar ;
+			}
+			number = Double.parseDouble(onlyNumber);
+		}
+
+		if (targetString.contains("million")) {
+			number = Double.parseDouble(onlyNumber) * 1000000;
+		}
+		return number;
+	}
+
 }

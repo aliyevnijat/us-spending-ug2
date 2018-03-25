@@ -119,6 +119,9 @@ public class AgencyPage {
 	@FindBy(xpath = "//table//tbody//td[1]")
 	public List<WebElement> agencyNameList;
 
+	@FindBy(xpath = "//*[contains(text(), 'National Mediation')]")
+	public WebElement NationalMediation;
+	
 	public void test() {
 
 		int row = 0;
