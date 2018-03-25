@@ -43,24 +43,16 @@ public class HomePage {
 	public WebElement glossarySearch;
 	
 	@FindBy(xpath="//span[.='Spending Explorer']")
-	public WebElement spendEx;
+	public WebElement spendEx;	 
 	
- 
-	 
-	
-	@FindBy(linkText = "Federal Accounts")      //Shavkat
-	public WebElement FedaralAgencies;
+	@FindBy(linkText = "Federal Accounts")
+	public WebElement FederalAgencies;
 
-	@FindBy(linkText = "Agencies")      //Shavkat
-	public WebElement agencies2;
-	
 	@FindBy(xpath="//div[.='Profiles']") 
 	public WebElement profiles;
 	
 	@FindBy(linkText = "Agencies") 
-	public WebElement agencies;
-	
-	 	
+	public WebElement agencies;	 	
 	
 	@FindBy(id = "logo")	
 	public WebElement goTohomePage;

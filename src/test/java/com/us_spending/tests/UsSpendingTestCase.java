@@ -179,8 +179,11 @@ public class UsSpendingTestCase extends TestBaseClass {
 
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
-
 		hp.clickButton(hp.profiles, hp.agencies);
+		List<String> list = BrowserUtils.getElementsText(ap.agencyProfilesTable3rdColumn);
+	    for(String string : list) {
+	    	assertTrue(string.endsWith("%"));
+	    }
 	}
 
 	@Test(priority = 12, description = "USRID012")
@@ -214,7 +217,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		mouse.moveToElement(hp.profiles).build().perform();
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.profiles.isDisplayed());
-		assertTrue(hp.FedaralAgencies.isDisplayed());
+		assertTrue(hp.FederalAgencies.isDisplayed());
 	}
 
 	@Test(priority = 15, description = "USAHM015")

@@ -1,6 +1,7 @@
 package com.us_spending.pages;
 
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -75,6 +76,9 @@ public class AgencyPage {
 
 	@FindBy(xpath = "//table//thead//td[3]")
 	public WebElement persentageButton;
+	
+	@FindBy(xpath = "//div[@id='agency-landing-results']//tbody/tr/td[3]//div[@class='cell-content']")
+	public List<WebElement> agencyProfilesTable3rdColumn;
 
 	@FindBy(xpath = "//button [@class='sort-icon active']")
 	public WebElement persentagelightDown;
@@ -173,9 +177,9 @@ public class AgencyPage {
 		
 		
 		
-		for(int i=0; i<agencyNameList.size(); i++) {
-			searchBox.sendKeys(agencyNameList.get(i)); //we need to type the agency names from the list into the Search Box
-		}
+//		for(int i=0; i<agencyNameList.size(); i++) {
+//			searchBox.sendKeys(agencyNameList.get(i)); //we need to type the agency names from the list into the Search Box
+//		}
 		
 		
 		
@@ -185,4 +189,4 @@ public class AgencyPage {
 		}
 
 	}
-}
+	}}
