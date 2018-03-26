@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class TestBaseClass {
+public class TestBaseClass { 
 protected WebDriver driver;
 	
 	@BeforeMethod(alwaysRun=true)

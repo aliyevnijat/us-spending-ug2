@@ -253,7 +253,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		ap.search.sendKeys("administrative");
 		ap.AdministrativeConferenceButton.click();
 		
-	}
+	} 
 	
 	@Test(priority = 18, description = "USRID018")
 	public void testCase18() {

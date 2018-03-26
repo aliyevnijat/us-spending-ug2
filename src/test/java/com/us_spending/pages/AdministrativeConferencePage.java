@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.us_spending.utilities.Driver;
 
 public class AdministrativeConferencePage {
-
+ 
 	private WebDriver driver;
 
 	public AdministrativeConferencePage() {

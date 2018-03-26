@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Configuration {
-	private static Properties configFile;
+	private static Properties configFile; 
 
 	static {
  

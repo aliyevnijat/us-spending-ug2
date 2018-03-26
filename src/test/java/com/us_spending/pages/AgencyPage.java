@@ -183,7 +183,7 @@ public class AgencyPage {
 //		for(int i=0; i<agencyNameList.size(); i++) {
 //			searchBox.sendKeys(agencyNameList.get(i)); //we need to type the agency names from the list into the Search Box
 //		}
-		
+		 
 		
 		
 		List<WebElement> list = agencyNameList;
