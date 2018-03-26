@@ -5,9 +5,16 @@
     <classes>
       <class name="com.us_spending.tests.UsSpendingTestCase">
         <methods>
+          <include name="signIn"/>
+          <include name="testCase17"/>
           <include name="tearDown"/>
+          <include name="testCase14"/>
+          <include name="testCase15"/>
+          <include name="testCase13"/>
+          <include name="testCase7"/>
+          <include name="testCase11"/>
           <include name="setUp"/>
-          <include name="testCase2"/>
+          <include name="testCase18"/>
         </methods>
       </class> <!-- com.us_spending.tests.UsSpendingTestCase -->
     </classes>

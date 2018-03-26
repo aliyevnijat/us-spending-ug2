@@ -1,70 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
+<testng-results skipped="0" failed="8" ignored="0" total="19" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14503" started-at="2018-03-20T22:11:14Z" finished-at="2018-03-20T22:11:29Z">
+  <suite name="Default suite" duration-ms="57527" started-at="2018-03-26T01:40:16Z" finished-at="2018-03-26T01:41:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14503" started-at="2018-03-20T22:11:14Z" finished-at="2018-03-20T22:11:29Z">
+    <test name="Default test" duration-ms="57527" started-at="2018-03-26T01:40:16Z" finished-at="2018-03-26T01:41:13Z">
       <class name="com.us_spending.tests.UsSpendingTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="1719" started-at="2018-03-20T22:11:14Z" finished-at="2018-03-20T22:11:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="5335" started-at="2018-03-26T01:40:16Z" finished-at="2018-03-26T01:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase1()[pri:1, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase1" duration-ms="720" started-at="2018-03-20T22:11:16Z" description="USAHM001" finished-at="2018-03-20T22:11:16Z">
+        <test-method status="PASS" signature="testCase1()[pri:1, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase1" duration-ms="1184" started-at="2018-03-26T01:40:21Z" description="USAHM001" finished-at="2018-03-26T01:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="73" started-at="2018-03-20T22:11:16Z" finished-at="2018-03-20T22:11:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="13" started-at="2018-03-26T01:40:22Z" finished-at="2018-03-26T01:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testCase2()[pri:2, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase2" duration-ms="2303" started-at="2018-03-20T22:11:17Z" description="USAHM002" finished-at="2018-03-20T22:11:19Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="PASS" signature="testCase2()[pri:2, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase2" duration-ms="2438" started-at="2018-03-26T01:40:22Z" description="USAHM002" finished-at="2018-03-26T01:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="14" started-at="2018-03-26T01:40:25Z" finished-at="2018-03-26T01:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase3()[pri:3, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase3" duration-ms="2818" started-at="2018-03-26T01:40:25Z" description="USAHM002" finished-at="2018-03-26T01:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="11" started-at="2018-03-26T01:40:28Z" finished-at="2018-03-26T01:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase4()[pri:4, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase4" duration-ms="2726" started-at="2018-03-26T01:40:28Z" description="USAHM002" finished-at="2018-03-26T01:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="11" started-at="2018-03-26T01:40:30Z" finished-at="2018-03-26T01:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestCase5()[pri:5, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="TestCase5" duration-ms="787" started-at="2018-03-26T01:40:30Z" description="USAHM005" finished-at="2018-03-26T01:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase5 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="10" started-at="2018-03-26T01:40:31Z" finished-at="2018-03-26T01:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestCase6()[pri:6, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="TestCase6" duration-ms="1164" started-at="2018-03-26T01:40:31Z" description="USAHM006" finished-at="2018-03-26T01:40:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase6 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="9" started-at="2018-03-26T01:40:32Z" finished-at="2018-03-26T01:40:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase8()[pri:8, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase8" duration-ms="3337" started-at="2018-03-26T01:40:32Z" description="USAHM008" finished-at="2018-03-26T01:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase8 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="12" started-at="2018-03-26T01:40:36Z" finished-at="2018-03-26T01:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase9()[pri:9, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase9" duration-ms="1616" started-at="2018-03-26T01:40:36Z" description="USAHM009" finished-at="2018-03-26T01:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase9 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="9" started-at="2018-03-26T01:40:37Z" finished-at="2018-03-26T01:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase10()[pri:10, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase10" duration-ms="22655" started-at="2018-03-26T01:40:37Z" description="USRID011" finished-at="2018-03-26T01:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase10 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="1003" started-at="2018-03-26T01:41:00Z" finished-at="2018-03-26T01:41:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase11()[pri:11, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase11" duration-ms="38" started-at="2018-03-26T01:41:01Z" description="USRID011" finished-at="2018-03-26T01:41:01Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=65.0.3325.162)
-  (Driver info: chromedriver=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d),platform=Mac OS X 10.13.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[TypeError: action.inputStateMap is undefined
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543654 (a46b62e9900f5a..., userDataDir: /var/folders/7v/8vh4h4751v1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.162, webStorageEnabled: true}
-Session ID: e9baa8f904c494f063b1f40983d5c553]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=65.0.3325.162)
-  (Driver info: chromedriver=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d),platform=Mac OS X 10.13.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543654 (a46b62e9900f5a..., userDataDir: /var/folders/7v/8vh4h4751v1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.162, webStorageEnabled: true}
-Session ID: e9baa8f904c494f063b1f40983d5c553
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-at com.us_spending.tests.UsSpendingTestCase.testCase2(UsSpendingTestCase.java:55)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.us_spending.pages.HomePage.clickButton(HomePage.java:35)
+at com.us_spending.tests.UsSpendingTestCase.testCase11(UsSpendingTestCase.java:190)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,67 +142,490 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="63" started-at="2018-03-20T22:11:19Z" finished-at="2018-03-20T22:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestCase5()[pri:5, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="TestCase5" duration-ms="314" started-at="2018-03-20T22:11:19Z" description="USAHM005" finished-at="2018-03-20T22:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase5 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="67" started-at="2018-03-20T22:11:19Z" finished-at="2018-03-20T22:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestCase6()[pri:6, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="TestCase6" duration-ms="1682" started-at="2018-03-20T22:11:19Z" description="USAHM006" finished-at="2018-03-20T22:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase6 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="71" started-at="2018-03-20T22:11:21Z" finished-at="2018-03-20T22:11:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase7()[pri:7, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase7" duration-ms="3600" started-at="2018-03-20T22:11:21Z" description="USAHM007" finished-at="2018-03-20T22:11:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase7 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="25" started-at="2018-03-20T22:11:25Z" finished-at="2018-03-20T22:11:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase11()[pri:11, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase11" duration-ms="473" started-at="2018-03-20T22:11:25Z" description="USRID011" finished-at="2018-03-20T22:11:25Z">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase11 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="84" started-at="2018-03-20T22:11:25Z" finished-at="2018-03-20T22:11:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="18" started-at="2018-03-26T01:41:01Z" finished-at="2018-03-26T01:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase12()[pri:12, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase12" duration-ms="186" started-at="2018-03-20T22:11:25Z" description="USRID012" finished-at="2018-03-20T22:11:25Z">
+        <test-method status="PASS" signature="testCase12()[pri:12, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase12" duration-ms="1082" started-at="2018-03-26T01:41:01Z" description="USRID012" finished-at="2018-03-26T01:41:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase12 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="107" started-at="2018-03-20T22:11:25Z" finished-at="2018-03-20T22:11:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="32" started-at="2018-03-26T01:41:02Z" finished-at="2018-03-26T01:41:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase15()[pri:15, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="testCase15" duration-ms="2160" started-at="2018-03-20T22:11:26Z" description="USAHM015" finished-at="2018-03-20T22:11:28Z">
+        <test-method status="FAIL" signature="testCase13()[pri:13, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase13" duration-ms="2023" started-at="2018-03-26T01:41:02Z" description="USAHM013" finished-at="2018-03-26T01:41:04Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at com.us_spending.tests.UsSpendingTestCase.testCase13(UsSpendingTestCase.java:212)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase13 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="11" started-at="2018-03-26T01:41:04Z" finished-at="2018-03-26T01:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase14()[pri:14, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase14" duration-ms="2022" started-at="2018-03-26T01:41:04Z" description="USAHM014" finished-at="2018-03-26T01:41:06Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at com.us_spending.tests.UsSpendingTestCase.testCase14(UsSpendingTestCase.java:225)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase14 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="9" started-at="2018-03-26T01:41:06Z" finished-at="2018-03-26T01:41:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase15()[pri:15, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase15" duration-ms="2018" started-at="2018-03-26T01:41:06Z" description="USAHM015" finished-at="2018-03-26T01:41:08Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at com.us_spending.tests.UsSpendingTestCase.testCase15(UsSpendingTestCase.java:237)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase15 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="setUp" is-config="true" duration-ms="409" started-at="2018-03-20T22:11:28Z" finished-at="2018-03-20T22:11:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="9" started-at="2018-03-26T01:41:08Z" finished-at="2018-03-26T01:41:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="signIn()[pri:19, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="signIn" duration-ms="190" started-at="2018-03-20T22:11:28Z" finished-at="2018-03-20T22:11:28Z">
+        <test-method status="PASS" signature="testCase16()[pri:16, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase16" duration-ms="4338" started-at="2018-03-26T01:41:08Z" description="USAHM016" finished-at="2018-03-26T01:41:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase16 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="10" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase17()[pri:17, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase17" duration-ms="12" started-at="2018-03-26T01:41:13Z" description="USILY017" finished-at="2018-03-26T01:41:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.us_spending.pages.HomePage.clickButton(HomePage.java:35)
+at com.us_spending.tests.UsSpendingTestCase.testCase17(UsSpendingTestCase.java:259)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase17 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="14" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase18()[pri:18, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase18" duration-ms="14" started-at="2018-03-26T01:41:13Z" description="USILY018" finished-at="2018-03-26T01:41:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.us_spending.pages.HomePage.clickButton(HomePage.java:35)
+at com.us_spending.tests.UsSpendingTestCase.testCase18(UsSpendingTestCase.java:288)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase18 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="15" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="signIn()[pri:19, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="signIn" duration-ms="15" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.us_spending.pages.HomePage.clickButton(HomePage.java:35)
+at com.us_spending.tests.UsSpendingTestCase.signIn(UsSpendingTestCase.java:328)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@2c7b5824]" name="tearDown" is-config="true" duration-ms="218" started-at="2018-03-20T22:11:28Z" finished-at="2018-03-20T22:11:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="setUp" is-config="true" duration-ms="19" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase7()[pri:21, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="testCase7" duration-ms="18" started-at="2018-03-26T01:41:13Z" description="USAHM0021" finished-at="2018-03-26T01:41:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: action.inputStateMap is undefined
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Nijats-MacBook-Pro.local', ip: 'fe80:0:0:0:8bc:77bb:de0a:b659%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 19454, moz:profile: /var/folders/7v/8vh4h4751v1..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 924e5250-daf3-cb4d-a3ba-20e7e3618c37
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.us_spending.pages.HomePage.clickButton(HomePage.java:35)
+at com.us_spending.tests.UsSpendingTestCase.testCase7(UsSpendingTestCase.java:347)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase7 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.us_spending.tests.UsSpendingTestCase@1f6c9cd8]" name="tearDown" is-config="true" duration-ms="620" started-at="2018-03-26T01:41:13Z" finished-at="2018-03-26T01:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
