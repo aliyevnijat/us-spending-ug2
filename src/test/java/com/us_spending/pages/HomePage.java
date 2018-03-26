@@ -105,7 +105,7 @@ public class HomePage {
 	@FindBy(tagName="h3")
 	public WebElement departmentName2;
 	
-	@FindBy(xpath="//div[class='authority-amount']")
+	@FindBy(xpath="//div[@class='budget-authority']//div[@class='authority-amount']")
 	public WebElement departmentBudget2;
 	
 	

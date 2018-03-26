@@ -1,6 +1,5 @@
 package com.us_spending.tests;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -13,10 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import com.us_spending.pages.AdminConfPage;
 import com.us_spending.pages.AgencyPage;
 import com.us_spending.pages.HomePage;
-import com.us_spending.pages.NationalMediationBoardPage;
 import com.us_spending.pages.PrivacyPage;
 import com.us_spending.utilities.BrowserUtils;
 import com.us_spending.utilities.TestBaseClass;
@@ -26,8 +23,6 @@ public class UsSpendingTestCase extends TestBaseClass {
 	HomePage hp = new HomePage();
 	AgencyPage ap = new AgencyPage();
 	PrivacyPage pp = new PrivacyPage();
-	AdminConfPage acp=new AdminConfPage();
-	NationalMediationBoardPage nmbp=new NationalMediationBoardPage();
 
 	String title = "USAspending.gov";
 
@@ -35,13 +30,10 @@ public class UsSpendingTestCase extends TestBaseClass {
 	String urlAgencyPage = "https://www.usaspending.gov/#/agency";
 	String urlDBpage = "https://www.usaspending.gov/#/db_info";
 	String ppUrl = "https://www.usaspending.gov/";
-	String urlAdminConfPage="https://www.usaspending.gov/#/agency/1136";
-	String urlNMBPage="https://www.usaspending.gov/#/agency/1142";
-	String linkTextAdminConf="Administrative Conference of the U.S. (ACUS)";
 
 	@Test(priority = 1, description = "USAHM001")
 	public void testCase1() {
-
+		BrowserUtils.waitFor(4);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
@@ -174,12 +166,11 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(5);
 		WebElement newWindow = driver.findElement(By.xpath("/html/head/link[1]")); // bad xpath. Need a good one ) although it works
 		BrowserUtils.waitFor(5);
-
-		System.out.println(driver.getTitle()); //not get Url bc Url of the page is not found in elements. Anyone has luck with finding the url??
-//		System.out.println(newWindow.getText()); //does not print anything out for some reason
-
+ 
 		assertTrue(driver.getTitle().equals("USDA"));
-//		assertTrue(newWindow.getText().equals("https://www.usda.gov/")); //does not pass
+		
+		assertTrue(driver.getCurrentUrl().equals("https://www.usda.gov/"));
+		 
 	}
 
 	@Test(priority = 11, description = "USRID011")
@@ -226,6 +217,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.profiles.isDisplayed());
 		assertTrue(hp.FederalAgencies.isDisplayed());
+
 	}
 
 	@Test(priority = 15, description = "USAHM015")
@@ -252,92 +244,63 @@ public class UsSpendingTestCase extends TestBaseClass {
 		assertTrue(hp.GlossarySearchPlace.isDisplayed());
 	}
 
-	@Test(priority = 17, description = "USILY017")
+	@Test(priority = 17, description = "USRID017")
 	public void testCase17() {
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
 		BrowserUtils.waitForPageToLoad(2);
-		assertTrue(ap.isUrl(urlAgencyPage));
 		ap.search.sendKeys("administrative");
-		BrowserUtils.hover(ap.AdministrativeConferenceButton);
-		assertEquals(ap.AdministrativeConferenceButton.getText(), linkTextAdminConf);
 		ap.AdministrativeConferenceButton.click();
-		BrowserUtils.waitFor(2);
-		//assert AdminConf page is loaded
-		assertTrue(acp.isUrl(urlAdminConfPage));
-		//save as double
-		double obligatedAmount$ = BrowserUtils.StringToDouble(acp.obligatedAmount.getText());
-		BrowserUtils.scroll(acp.objectClassesTable);
-		BrowserUtils.hover(acp.personCompTable);
-		//save amount
-		BrowserUtils.waitForVisibility(acp.personCompAmount, 3);
-		double personCompAmount$ = BrowserUtils.extractNumberFromString(acp.personCompAmount.getText().substring(1, 4));
-		//System.out.println(personCompAmount$);
-		BrowserUtils.hover(acp.contractServTable);
-		//save amount
-		BrowserUtils.waitForVisibility(acp.contractServAmount, 3);
-		double contractServAmount$ = BrowserUtils.extractNumberFromString(acp.contractServAmount.getText().substring(1, 4));
-		//verify the sum of last two amounts match the first number
-		assertEquals((personCompAmount$+contractServAmount$), obligatedAmount$);
+		
 	}
-	@Test(priority = 18, description = "USILY018")
+	
+	@Test(priority = 18, description = "USRID018")
 	public void testCase18() {
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
 		BrowserUtils.waitForPageToLoad(2);
-		BrowserUtils.hover(ap.NationalMediation);
-		ap.NationalMediation.click();
-		BrowserUtils.waitFor(2);
-		BrowserUtils.scroll(nmbp.objectClassesTable);
-		BrowserUtils.hover(nmbp.personCompTable);
-		//save total amount1
-		BrowserUtils.waitForVisibility(nmbp.personCompAmount, 3); 
-		double personCompAmount$ = BrowserUtils.extractNumberFromString(nmbp.personCompAmount.getText().substring(1,13));
-		BrowserUtils.hover(nmbp.personCompTable);
-		nmbp.personCompTable.click();
-		BrowserUtils.waitFor(2);
-		BrowserUtils.hover(nmbp.FullTimeBox);
-		//save amount
-		BrowserUtils.waitForVisibility(nmbp.FullTimeAmount, 3);
-		double FullTimeAmount$ = BrowserUtils.extractNumberFromString(nmbp.FullTimeAmount.getText().substring(1, 13));
-		BrowserUtils.hover(nmbp.CivilianBox);
-		//save amount
-		BrowserUtils.waitForVisibility(nmbp.CivilianAmount, 3);
-		double CivilianAmount$ = BrowserUtils.extractNumberFromString(nmbp.CivilianAmount.getText().substring(1, 11));
-		BrowserUtils.hover(nmbp.SpecialBox);
-		//save amount
-		BrowserUtils.waitForVisibility(nmbp.SpecialAmount, 3);
-		double SpecialAmount$ =BrowserUtils.extractNumberFromString( nmbp.SpecialAmount.getText().substring(1, 7));
-		BrowserUtils.hover(nmbp.otherBox);
-		BrowserUtils.waitForVisibility(nmbp.otherAmount, 4);
-		double otherAmount$ = BrowserUtils.extractNumberFromString(nmbp.otherAmount.getText().substring(1, 9));
-		//verify amounts sum and match
-		assertTrue(nmbp.isTitle(title));
-		assertTrue(nmbp.isUrl(urlNMBPage));
-		double sumOfAllocations$=FullTimeAmount$+CivilianAmount$+SpecialAmount$+otherAmount$;
-		assertEquals((sumOfAllocations$), personCompAmount$, 
-				"There is discrepancy caused by rounding, totaling: "+(sumOfAllocations$-personCompAmount$));
-	}
+		ap.NationalMeditationBoard.click();
 
-	@Test(priority = 19) //// USILY 019 MARIA DOBROKHODOVA
-	public void signIn() {
+	}	
+	
+	@Test(priority = 19 , description = "USAHM0019")  
+	public void testCase19() {
+		BrowserUtils.waitFor(4);
 		assertTrue(hp.isTitle(title));
 		assertTrue(hp.isUrl(urlHomePage));
 		hp.clickButton(hp.profiles, hp.agencies);
+	 
 		ap.test();
-		System.out.println(hp.departmentName.getText());
-		System.out.println(hp.departmentBudget.getText());
+		String departNAME=hp.departmentName.getText();
+		String amountDepart=hp.departmentBudget.getText();
+		amountDepart=amountDepart.substring(0,5);
+		amountDepart=amountDepart.replace(',', '.');
+		
 		ap.DepartmentofHousing.click();
-
-		System.out.println(hp.departmentName2.getText());
-
-		System.out.println(hp.departmentBudget2.getText());
-		// assertTrue(hp.departmentName.getText().equals(hp.departmentName2.getText()));
-		// assertTrue(hp.departmentBudget.getText().equals(hp.departmentBudget2.getText()));
+		BrowserUtils.waitFor(4);
+		
+		assertTrue(departNAME.contains(hp.departmentName2.getText()));
+		assertTrue(hp.departmentBudget2.getText().contains(amountDepart));
 	}
 
+	@Test(priority = 20 , description = "USAHM0020")  
+	public void testCase20() {
+		BrowserUtils.waitForPageToLoad(2);
+		assertTrue(hp.isTitle(title));
+		assertTrue(hp.isUrl(urlHomePage));
+		hp.clickButton(hp.profiles, hp.agencies);
+		ap.DepartmentofHousing.click();
+		assertTrue(driver.getTitle().equals("USAspending.gov"));
+		assertTrue(driver.getCurrentUrl().contains("https://www.usaspending.gov/"));
+		driver.navigate().back();
+		ap.DepartmentofAgriculture.click();
+		assertTrue(driver.getTitle().equals("USAspending.gov"));
+		assertTrue(driver.getCurrentUrl().contains("https://www.usaspending.gov/"));
+	
+	}
+	
 	@Test(priority = 21, description = "USAHM0021")
 	public void testCase7() {
 
@@ -349,7 +312,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		ap.search.sendKeys("");
 		BrowserUtils.scroll(ap.ClickHere);
 		ap.ClickHere.click();
-		BrowserUtils.waitFor(3);
+		BrowserUtils.waitFor(3);	
 		BrowserUtils.switchToWindowUrl(urlDBpage);
 		assertTrue(hp.isTitle(title));
 		BrowserUtils.waitForPageToLoad(2);

@@ -118,10 +118,10 @@ public class AgencyPage {
 
 	@FindBy(xpath = "//table//tbody//td[1]")
 	public List<WebElement> agencyNameList;
-
-	@FindBy(xpath = "//*[contains(text(), 'National Mediation')]")
-	public WebElement NationalMediation;
 	
+	@FindBy(xpath = " //a[. = 'National Mediation Board (NMB)']")
+	public WebElement NationalMeditationBoard;
+
 	public void test() {
 
 		int row = 0;
@@ -192,4 +192,6 @@ public class AgencyPage {
 		}
 
 	}
-	}}
+	}
+	
+}
