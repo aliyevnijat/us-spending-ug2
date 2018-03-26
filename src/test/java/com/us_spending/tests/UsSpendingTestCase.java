@@ -242,7 +242,7 @@ public class UsSpendingTestCase extends TestBaseClass {
 		hp.Glossary.click();
 		BrowserUtils.waitFor(2);
 		assertTrue(hp.GlossarySearchPlace.isDisplayed());
-	}
+	} 
 
 	@Test(priority = 17, description = "USRID017")
 	public void testCase17() {

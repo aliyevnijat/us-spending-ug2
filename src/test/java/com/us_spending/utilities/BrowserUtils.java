@@ -38,7 +38,7 @@ public class BrowserUtils {
 
 		for (WebElement el : elements) {
 			if (!el.getText().isEmpty()) {
-				elemTexts.add(el.getText()); 
+				elemTexts.add(el.getText());  
 			}
 		}
 		return elemTexts;

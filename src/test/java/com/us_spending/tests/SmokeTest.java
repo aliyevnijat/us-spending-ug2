@@ -11,7 +11,7 @@ import com.us_spending.pages.HomePage;
 import com.us_spending.utilities.BrowserUtils;
 import com.us_spending.utilities.TestBaseClass;
 
-public class SmokeTest extends TestBaseClass {
+public class SmokeTest extends TestBaseClass { 
 	 
 	String title = "USAspending.gov";
 	String urlHomePage = "https://www.usaspending.gov/#/";

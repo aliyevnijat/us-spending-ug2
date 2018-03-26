@@ -153,7 +153,7 @@ public class AgencyPage {
 		long priceInUSD = price;
 		NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(Locale.US);
 		System.out.printf("Price in USD : %s %n", currencyFormat.format(priceInUSD));
-	}
+	} 
 
 	public void listToUpperCase() {
 		 List<WebElement> list = agencyNameList;
